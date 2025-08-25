@@ -1,4 +1,4 @@
-package org.example.springbook;
+package org.example.springbook.BookPackage;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

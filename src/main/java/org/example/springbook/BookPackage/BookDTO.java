@@ -1,12 +1,5 @@
-package org.example.springbook;
+package org.example.springbook.BookPackage;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.springframework.stereotype.Component;
-
-
-@Component
 
 public class BookDTO {
     private String title;

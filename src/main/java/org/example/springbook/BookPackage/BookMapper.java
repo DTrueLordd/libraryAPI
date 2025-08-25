@@ -1,6 +1,4 @@
-package org.example.springbook;
-
-import org.springframework.stereotype.Component;
+package org.example.springbook.BookPackage;
 
 import java.util.ArrayList;
 import java.util.List;
