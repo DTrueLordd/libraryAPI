@@ -37,10 +37,10 @@ public class BookController {
 
 
     @PostMapping("/books")
-    public ResponseEntity<Book> addBook(@RequestBody Book book) {
-        Book saved = service.createBook(book);
+    public ResponseEntity<Book> addBook(@RequestBody BookDTO dto) {
+        Book saved = service.createBook(dto);
         return ResponseEntity.created(
-                        URI.create("/books" + saved.getId()))
+                        URI.create("/books/" + saved.getId()))
                 .body(saved);
     }
 
