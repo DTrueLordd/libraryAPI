@@ -1,5 +1,10 @@
 package org.example.springbook.UserPackage;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class UserDTO {
     private String username;
 
@@ -7,11 +12,4 @@ public class UserDTO {
         this.username = username;
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
 }
