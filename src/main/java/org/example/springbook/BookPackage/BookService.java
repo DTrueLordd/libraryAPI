@@ -31,8 +31,9 @@ public class BookService {
         return BookMapper.mapBookToDTO(book);
     }
 
-    public Book createBook(Book book){
-       return repository.save(book);
+    public Book createBook(BookDTO dto){
+
+        return repository.save(new Book(dto.getTitle(), dto.getAuthor(), dto.getYear(), dto.getGenre()));
     }
 
     public Book updateBook(Long id, Book newBook){

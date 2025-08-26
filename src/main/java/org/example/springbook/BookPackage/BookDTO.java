@@ -1,6 +1,11 @@
 package org.example.springbook.BookPackage;
 
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class BookDTO {
     private String title;
     private String author;
@@ -19,19 +24,4 @@ public class BookDTO {
         this.genre = genre;
     }
 
-    public String getAuthor() {
-        return author;
-    }
-
-    public String getGenre() {
-        return genre;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public int getYear() {
-        return year;
-    }
 }
